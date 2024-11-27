@@ -38,7 +38,7 @@ en caso de que no funcione ejecutar
 
 
 # Capturas de pantalla 
-![alt text](![image](https://github.com/user-attachments/assets/cc60a1a8-9e35-499c-94f3-1005aba91d9e)
+![alt text](image
 )
-![alt text](![image-1](https://github.com/user-attachments/assets/3b4cc03b-e8d3-45ce-abbc-e23449ddbaf9)
+![alt text](image-1
 )
