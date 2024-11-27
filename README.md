@@ -1,5 +1,4 @@
-![image-1](https://github.com/user-attachments/assets/905812df-5de6-417c-a725-869d79144b0a)
-![image](https://github.com/user-attachments/assets/e8abe056-bf30-4752-9654-99f1f9048909)
+
 # Flappy Bird Game
 
 Este proyecto es una implementación simple del juego Flappy Bird en C, utilizando la biblioteca SFML. El juego presenta un pájaro que el jugador puede hacer saltar para evitar obstáculos en forma de tuberías que se desplazan hacia la izquierda.
@@ -40,7 +39,5 @@ en caso de que no funcione ejecutar
 
 
 # Capturas de pantalla 
-![alt text](image
-)
-![alt text](image-1
-)
+![image-1](https://github.com/user-attachments/assets/905812df-5de6-417c-a725-869d79144b0a)
+![image](https://github.com/user-attachments/assets/e8abe056-bf30-4752-9654-99f1f9048909)
