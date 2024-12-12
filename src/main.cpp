@@ -1,5 +1,7 @@
 #include "SFML/Graphics.hpp"
-#include "..\include\Juego.hpp"
+#include <Juego.hpp>
+#include <iostream>
+
 
 int main(int argc, char const *argv[])
 {

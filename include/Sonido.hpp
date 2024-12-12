@@ -6,10 +6,10 @@
 class Sonido : public sf::Drawable
 {
 private:
-    sf::SoundBuffer puntosBird;
+    sf::SoundBuffer *puntosBird;
     sf::SoundBuffer golpeBird;
     sf::SoundBuffer aleteoBird;
-    sf::Sound punto;
+    sf::Music punto;
     sf::Sound aleteo;
     sf::Sound golpe;
     sf::Music musica;

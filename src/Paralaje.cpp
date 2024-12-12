@@ -53,7 +53,7 @@ void Paralaje::Actualizar()
 {
     if(obstaculos[i].GetPosicion().x < 100 && obstaculos[i].GetPosicion().x > posicionUltimoObstaculoPasado)
     {
-        puntaje++;
+        puntaje += 10;
         posicionUltimoObstaculoPasado = obstaculos[i].GetPosicion().x;
     }
     if(obstaculos[i].GetPosicion().x <= -100)

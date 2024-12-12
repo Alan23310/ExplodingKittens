@@ -35,14 +35,19 @@ void Juego::Ventana()
 
     presionado = false;
 
-    Sonido sonido;
+    //Sonido sonido;
+    
+    sf::Music punto;
+    punto.openFromFile("assets/music/assets_music_musica.ogg");
+    punto.play();
 
     while (ventana.isOpen())
     {
         Bird *bird = new Bird(210, 350);
         Paralaje *paralaje = new Paralaje();
         inciado = false;
-        sonido.Incializado(false);
+        Sonido *sonido = new Sonido();
+        sonido->Incializado(false);
         while (true)
         {
             sf::Event event;
@@ -62,19 +67,19 @@ void Juego::Ventana()
                 {
                     bird->Saltar();
                     presionado = true;
-                    sonido.Aleteo();
+                    sonido->Aleteo();
                     if (!inciado)
                     {
                         inciado = true;
                         bird->Iniciado();
                         paralaje->Iniciado();
-                        sonido.Incializado(true);
+                        sonido->Incializado(true);
                     }
                 }
             }
             else
             {
-                sonido.GameOver();
+                sonido->GameOver();
             }
 
             if (!bird->ObtenerVida() && sf::Mouse::isButtonPressed(sf::Mouse::Left) && !presionado)
@@ -100,16 +105,17 @@ void Juego::Ventana()
                 presionado = false;
             }
 
-            sonido.DefinirPuntaje(paralaje->Puntaje());
+            sonido->DefinirPuntaje(paralaje->Puntaje());
             ventana.clear();
             ventana.draw(fondo);
             ventana.draw(*paralaje);
             ventana.draw(*bird);
-            ventana.draw(sonido);
+            ventana.draw(*sonido);
             ventana.display();
         }
         delete bird;
         delete paralaje;
+        delete sonido;
     }
     return;
 }
